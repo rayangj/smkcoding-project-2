@@ -1,6 +1,5 @@
 package com.example.pantaucorona
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,22 +7,17 @@ import android.view.ViewGroup
 import androidx.annotation.Nullable
 import androidx.fragment.app.Fragment
 
-class ProfilFragmen : Fragment() {
+class TipsFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_profil,
-            container, false)
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_tips,container, false)
     }
     override fun onViewCreated(
-        view: View,
-        @Nullable savedInstanceState: Bundle?
-    ) {
+        view: View,@Nullable savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
     }
 

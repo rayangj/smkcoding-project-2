@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pantaucorona">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,9 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ProfilFragmen"></activity>
-        <activity android:name=".MyFriendsFragmen" />
-        <activity android:name=".GithubFragmen" />
+        <activity android:name=".InfoFragment"></activity>
+        <activity android:name=".ProvinsiFragment" />
+        <activity android:name=".TipsFragment" />
+        <activity android:name=".HomeFragment" />
+        <activity android:name=".NegaraFragment" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
