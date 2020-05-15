@@ -14,7 +14,6 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="Negara"
-            android:layout_marginRight="20dp"
             android:textColor="#000"
             android:textSize="16sp" />
 
@@ -23,6 +22,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Sembuh"
+            android:gravity="center"
             android:textColor="#53B820"
             android:textSize="16sp" />
 
@@ -31,6 +31,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Positif"
+            android:gravity="center"
             android:textColor="#E3D132"
             android:textSize="16sp" />
 
@@ -39,6 +40,7 @@
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Meninggal"
+            android:gravity="center"
             android:textColor="#EC1D1D"
             android:textSize="16sp" />
     </LinearLayout>
