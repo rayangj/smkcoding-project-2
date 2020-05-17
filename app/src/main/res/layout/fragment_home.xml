@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
 
     <TextView
         android:layout_width="match_parent"
@@ -32,6 +37,11 @@
        android:layout_margin="15dp"
        android:backgroundTint="#681010"
        app:cardCornerRadius="10dp">
+       <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/swipeRefreshLayoutInd">
+
 
        <LinearLayout
            android:layout_width="match_parent"
@@ -51,7 +61,8 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_margin="8dp"
-           android:orientation="horizontal">
+           android:orientation="horizontal"
+           android:id="@+id/sind">
 
            <ImageView
                android:layout_width="wrap_content"
@@ -64,7 +75,7 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:textColor="#fff"
-               android:text=": Sembuh">
+               android:text=": wait...">
 
            </TextView>
        </LinearLayout>
@@ -72,6 +83,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_margin="8dp"
+           android:id="@+id/pind"
            android:orientation="horizontal">
 
            <ImageView
@@ -85,7 +97,7 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                 android:textColor="#fff"
-               android:text=": Positif Terjangkit">
+               android:text=": wait...">
 
            </TextView>
        </LinearLayout>
@@ -93,6 +105,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:layout_margin="8dp"
+           android:id="@+id/mind"
            android:orientation="horizontal">
 
            <ImageView
@@ -106,11 +119,12 @@
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                 android:textColor="#fff"
-               android:text=" : Meninggal">
+               android:text=" : wait...">
 
            </TextView>
        </LinearLayout>
        </LinearLayout>
+       </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
    </androidx.cardview.widget.CardView>
     <View
@@ -149,6 +163,11 @@
         android:backgroundTint="#2692DA"
         app:cardCornerRadius="10dp"
         >
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefreshLayoutGlo">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -167,6 +186,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:id="@+id/sglo"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -180,7 +200,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
-                    android:text=": Sembuh">
+                    android:text=": wait...">
 
                 </TextView>
             </LinearLayout>
@@ -188,6 +208,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:id="@+id/pglo"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -201,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
-                    android:text=": Positif Terjangkit">
+                    android:text=": wait...">
 
                 </TextView>
             </LinearLayout>
@@ -209,6 +230,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
+                android:id="@+id/mglo"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -222,11 +244,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#fff"
-                    android:text=" : Meninggal">
+                    android:text=" : wait...">
 
                 </TextView>
             </LinearLayout>
-        </LinearLayout>
+</LinearLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </androidx.cardview.widget.CardView>
+</LinearLayout>
 </LinearLayout>
