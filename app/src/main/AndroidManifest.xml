@@ -11,7 +11,8 @@
         android:roundIcon="@drawable/bacteria"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".InfoFragment"></activity>
+        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".InfoFragment" />
         <activity android:name=".ProvinsiFragment" />
         <activity android:name=".TipsFragment" />
         <activity android:name=".HomeFragment" />
