@@ -27,11 +27,21 @@
         android:background="#000">
 
     </View>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_listTips"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        tools:listitem="@layout/tips_item"/>
+        tools:listitem="@layout/tips_item" />
 
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_gravity="bottom|right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#255CF4"
+        android:src="@drawable/ic_floating_ab" />
 </LinearLayout>

@@ -11,6 +11,7 @@
         android:roundIcon="@drawable/bacteria"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".TipsActivity"></activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +24,7 @@
         <activity android:name=".TipsFragment" />
         <activity android:name=".HomeFragment" />
         <activity android:name=".NegaraFragment" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>
